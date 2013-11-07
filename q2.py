@@ -17,10 +17,15 @@ def q2():
 		i = i + 1
 	print terms
 
-	result = [ ]
+	#result = [ ]
 	x = 1
+	result = filter(lambda x: x % 2 == 0, terms)
+	return sum(result)
+
+"""
 	for x in terms:
 		if x%2 == 0:
 			result.append(x)
 	print result
 	return sum(result)
+"""
